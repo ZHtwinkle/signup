@@ -5,7 +5,7 @@ A beautiful and modern user registration and login system built with:
 - Frontend: Vue.js
 - Database: SQLite
 
-[中文文档](README.zh-CN.md)
+[中文文档](README.md)
 
 ## Project Structure
 - `/backend` - NestJS backend application
