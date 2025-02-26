@@ -1,0 +1,147 @@
+/* 企业级网站风格 CSS */
+
+/* 全局字体和排版 */
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* 按钮样式优化 */
+.v-btn {
+  letter-spacing: 0.5px;
+  text-transform: none !important;
+  font-weight: 500 !important;
+}
+
+.v-btn--elevated {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.v-btn--elevated:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 卡片样式优化 */
+.v-card {
+  transition: all 0.3s ease;
+  border-radius: 12px !important;
+}
+
+.v-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.v-card__title {
+  font-weight: 600 !important;
+}
+
+/* 输入框样式优化 */
+.v-field {
+  border-radius: 8px !important;
+}
+
+.v-field--focused {
+  box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2) !important;
+}
+
+/* 标题样式 */
+.section-title {
+  font-weight: 700 !important;
+  margin-bottom: 1.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: #1976D2;
+  border-radius: 2px;
+}
+
+/* 企业级页脚 */
+.corporate-footer {
+  background-color: #1565C0 !important;
+  color: white;
+  padding: 2rem 0;
+}
+
+/* 动画效果 */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 响应式调整 */
+@media (max-width: 600px) {
+  .v-container {
+    padding: 12px !important;
+  }
+  
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* 企业级特性卡片 */
+.feature-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.feature-icon {
+  font-size: 48px;
+  margin-bottom: 1rem;
+  color: #1976D2;
+}
+
+/* 渐变背景 */
+.gradient-primary {
+  background: linear-gradient(45deg, #1976D2, #64B5F6) !important;
+  color: white !important;
+}
+
+/* 阴影效果 */
+.elevation-custom {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* 圆角图片 */
+.rounded-image {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* 企业级导航栏 */
+.corporate-navbar {
+  backdrop-filter: blur(10px);
+  background-color: rgba(25, 118, 210, 0.95) !important;
+}
+
+/* 页面过渡动画 */
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(10px);
+}
