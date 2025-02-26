@@ -17,6 +17,7 @@ A beautiful and modern user registration and login system built with:
 - User authentication
 - Profile management
 - Responsive UI
+- Cross-platform compatibility
 
 ## Getting Started
 
