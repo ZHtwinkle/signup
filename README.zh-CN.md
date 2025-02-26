@@ -41,8 +41,11 @@ npm run serve
 - Vuetify - 用于 Vue.js 的 Material Design 组件框架
 
 ## 系统截图
+### 登录界面
 ![登录界面](screenshots/login.png)
+### 注册界面
 ![注册界面](screenshots/register.png)
+### 个人中心
 ![个人中心](screenshots/profile.png)
 
 ## 安全特性
